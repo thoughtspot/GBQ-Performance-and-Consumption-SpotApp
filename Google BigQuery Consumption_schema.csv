@@ -1,0 +1,20 @@
+SpotApp table;SpotApp columns;SpotApp column datatype;SpotApp column description;SpotApp mandatory column
+JOBS_BY_PROJECT;cache_hit;BOOL;This is to map the column cache_hit;No
+JOBS_BY_PROJECT;creation_time;DATE_TIME;Creation time of this job. Partitioning is based on the UTC time of this timestamp.;No
+JOBS_BY_PROJECT;end_time;DATE_TIME;This is to map the column end_time;No
+JOBS_BY_PROJECT;error_message;VARCHAR;This is to map the column error_message;No
+JOBS_BY_PROJECT;error_reason;VARCHAR;A human-readable description of the error.;No
+JOBS_BY_PROJECT;job_id;VARCHAR;This is to map the column job_id;No
+JOBS_BY_PROJECT;job_type;VARCHAR;The type of the job. Can be QUERY, LOAD, EXTRACT, COPY, or null. Job type null indicates an internal job, such as script job statement evaluation or materialized view refresh.;No
+JOBS_BY_PROJECT;priority;VARCHAR;The priority of this job. Valid values include INTERACTIVE and BATCH.;No
+JOBS_BY_PROJECT;project_id;VARCHAR;ID of the project.;No
+JOBS_BY_PROJECT;project_number;INT64;Number of the project.;No
+JOBS_BY_PROJECT;query;VARCHAR;SQL query text. Note: Only JOBS_BY_PROJECT view has the query column.;No
+JOBS_BY_PROJECT;reservation_id;VARCHAR;Name of the primary reservation assigned to this job, if applicable. If your job ran in a project that is assigned to a reservation, it would follow this format: RESERVATION_ADMIN_PROJECT:RESERVATION_LOCATION.RESERVATION_NAME;No
+JOBS_BY_PROJECT;start_time;DATE_TIME;This is to map the column start_time;No
+JOBS_BY_PROJECT;state;VARCHAR;Running state of the job. Valid states include PENDING, RUNNING, and DONE.;No
+JOBS_BY_PROJECT;statement_type;VARCHAR;The type of query statement, if valid. For example, SELECT, INSERT, UPDATE, DELETE, or SCRIPT.;No
+JOBS_BY_PROJECT;total_bytes_billed;INT64;This is to map the column total_bytes_billed;No
+JOBS_BY_PROJECT;total_bytes_processed;INT64;This is to map the column total_bytes_processed;No
+JOBS_BY_PROJECT;total_slot_ms;INT64;This is to map the column total_slot_ms;No
+JOBS_BY_PROJECT;user_email;VARCHAR;Email address or service account of the user who ran the job.;No
